@@ -4,7 +4,9 @@ import jm.task.core.jdbc.service.UserServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.sql.Statement;
 import java.util.List;
+
 
 public class UserServiceTest {
     private final UserService userService = new UserServiceImpl();
@@ -98,5 +100,6 @@ public class UserServiceTest {
             Assert.fail("При тестировании очистки таблицы пользователей произошло исключение\n" + e);
         }
     }
+
 
 }
