@@ -4,6 +4,7 @@ import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
