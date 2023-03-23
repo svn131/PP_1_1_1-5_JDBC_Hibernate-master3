@@ -9,37 +9,37 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
 
-UserDao userDaoJDBC = new UserDaoJDBCImpl();
+    private UserDao userDaoJDBC = new UserDaoJDBCImpl();
 
 
-public void createUsersTable() {
+    public void createUsersTable() {
 
-    userDaoJDBC.createUsersTable();
-    System.out.println("Таблица успешно создана");
-}
+        userDaoJDBC.createUsersTable();
+        System.out.println("Таблица успешно создана");
+    }
 
-public void dropUsersTable() {
+    public void dropUsersTable() {
 
-    userDaoJDBC.dropUsersTable();
-}
+        userDaoJDBC.dropUsersTable();
+    }
 
-public void saveUser(String name, String lastName, byte age) {
+    public void saveUser(String name, String lastName, byte age) {
 
-    userDaoJDBC.saveUser(name, lastName, age);
-}
+        userDaoJDBC.saveUser(name, lastName, age);
+    }
 
-public void removeUserById(long id) {
+    public void removeUserById(long id) {
 
-    userDaoJDBC.removeUserById(id);
-}
+        userDaoJDBC.removeUserById(id);
+    }
 
-public List<User> getAllUsers() {
+    public List<User> getAllUsers() {
 
-    return userDaoJDBC.getAllUsers();
-}
+        return userDaoJDBC.getAllUsers();
+    }
 
-public void cleanUsersTable() {
+    public void cleanUsersTable() {
 
-    userDaoJDBC.cleanUsersTable();
-}
+        userDaoJDBC.cleanUsersTable();
+    }
 }
