@@ -2,7 +2,6 @@ package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
-import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -106,7 +105,6 @@ public class UserDaoJDBCImpl implements UserDao {
             List<User> userLists = new ArrayList<>();
             return userLists;
         }
-
         return userList;
     }
 
