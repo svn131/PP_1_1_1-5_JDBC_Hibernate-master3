@@ -14,7 +14,7 @@ import javax.persistence.Query;
 
 public class UserDaoHibernateImpl implements UserDao {
     private final Util util;
-    Transaction transaction = null;
+    private Transaction transaction = null;
 
     {
         util = new Util();
